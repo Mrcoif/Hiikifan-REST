@@ -5,7 +5,6 @@ from .views import MemeViewSet
 
 router = routers.DefaultRouter()
 router.register(r'', MemeViewSet, basename='memes')
-print(router.urls)
 
 urlpatterns = [
     path('', include(router.urls)),
