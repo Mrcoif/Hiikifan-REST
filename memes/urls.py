@@ -7,5 +7,5 @@ router = routers.DefaultRouter()
 router.register(r'', MemeViewSet, basename='memes')
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path(r'^$', include(router.urls)),
 ]
